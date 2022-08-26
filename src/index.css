@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+nav{
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+  background-color: lightseagreen;
+  color: black;
+  align-items: center;
+  height: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  align-items: center;
+}
+
+nav ul li{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.cta-outline {
+  background-color: transparent;
+  border: 1px solid lightcoral;
+  color: lightcoral;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.black{
+  border: 1px solid lightcyan;
+  color: lightcyan;
+}
+
+#brand{
+  font-weight: bolder;
+  font-size: 2.0rem;
+}
+
+
+/* Home Section  */
+
+.home{
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+  height: calc(100vh - 90px);
+  color: black;
+  padding: 0 50px;
+  gap: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.im{
+  color: rgb(70, 70, 70);
+}
+
+.black-filled{
+  background-color: #000;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.brief{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.brief p {
+  font-size: 1.5rem;
+  font-weight: medium;
+}
+
+.home figure{
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.home img {
+  width: 400px;
+}
+
+/* portfolio  */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.portfolio article {
+  display: flex;
+  gap: 2rem;
+}
+
+figure{
+  margin: 0;
+}
+
+.headings{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn-center{
+  display: flex;
+  justify-content: center;
+}
+
+/* aboutMe */
+.aboutMe {
+    
+    padding: 0 60px;
+}
+
+.aboutMe main{
+  display: flex;
+  gap: 3rem;
+}
+.aboutMe {
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 50px;
+}
+#who-am-i{
+  color: #b4b4b4;
+  font-weight: bold;
+  opacity: .8;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog {
+    padding: 0 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog main{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.blog article{
+  width: 300px;
+  margin: 10px 0;
+}
+/* Testimonials*/
+.testimonials {
+  padding: 20px 50px;
+  padding-bottom: 30px;
+  background-color: lightseagreen;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Testimoni*/
+.testimoni {
+  padding: 20px 50px;
+  padding-bottom: 30px;
+  background-color: lightseagreen;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 800px) {
+  h1{
+    font-size: 1.2rem;
+  }
+  .brief p {
+    font-size: 1.2rem;
+    font-weight: medium;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: #080808;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    opacity: .95;
+    padding: 15px 5px;
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .active{
+    display: flex;
+  }
+
+  .nav-menu span{
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .home img {
+    width: 300px;
+  }
+
+  .home{
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .portfolio article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .portfolio article img{
+    width: 100px;
+  }
+
+  .aboutMe main{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutMe main img{
+    width: 300px;
+    text-align: center;
+  }
+}
+/* footer */
+.footer {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px 50px;
+  padding-bottom: 30px;
+  background-color: lightseagreen;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+}
